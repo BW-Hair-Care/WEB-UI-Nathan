@@ -1,0 +1,185 @@
+.style,
+.color {
+  width: 90%;
+  .flex(space-between, center);
+  margin: 5rem auto;
+
+  h3 {
+    text-align: center;
+    margin: 1.5rem auto;
+    font-family: 'Cookie', cursive;
+
+    &:hover {
+      -webkit-animation: color-change 1s infinite;
+      -moz-animation: color-change 1s infinite;
+      -o-animation: color-change 1s infinite;
+      -ms-animation: color-change 1s infinite;
+      animation: color-change 1s infinite;
+      transform: translateY(-.3rem);
+      transition: .3s;
+    }
+    @-webkit-keyframes color-change {
+      0% { color: purple; }
+      25% { color: rgb(255, 75, 75); }
+      50% { color: rgb(79, 79, 255); }
+      75% { color: green; }
+      100% { color: black; }
+    }
+    @-moz-keyframes color-change {
+      0% { color: purple; }
+      25% { color: rgb(255, 75, 75); }
+      50% { color: rgb(79, 79, 255); }
+      75% { color: green; }
+      100% { color: black; }
+    }
+    @-ms-keyframes color-change {
+      0% { color: purple; }
+      25% { color: rgb(255, 75, 75); }
+      50% { color: rgb(79, 79, 255); }
+      75% { color: green; }
+      100% { color: black; }
+    }
+    @-o-keyframes color-change {
+      0% { color: purple; }
+      25% { color: rgb(255, 75, 75); }
+      50% { color: rgb(79, 79, 255); }
+      75% { color: green; }
+      100% { color: black; }
+    }
+    @keyframes color-change {
+      0% { color: purple; }
+      25% { color: rgb(255, 75, 75); }
+      50% { color: rgb(79, 79, 255); }
+      75% { color: green; }
+      100% { color: black; }
+    }
+  
+  }
+
+  p {
+    font-size: 1.6rem;
+    text-align: center;
+
+    @media @phone {
+      font-size: 1.4rem;
+    }
+  }
+
+}
+
+.style {
+  background-color: @background;
+  
+  @media @desktop {
+    flex-direction: column;
+  }
+
+  #reverse {
+    @media @desktop {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .col-1-of-3 {
+    width: 30%;
+    .flex(center, center);
+    flex-direction: column;
+    padding: 3rem;
+
+    @media @desktop {
+      margin: 2rem 4rem;
+      width: 100%;
+      flex-direction: row;
+    }
+ 
+    @media @phone {
+      width: 100%;
+      padding: 1rem;
+    }
+    
+    img {
+      width: 60%;
+      border-radius: 50%;
+
+      &:hover {
+        transition: 0.5s ease-in-out;
+        transform: scale(1.1, 1.1);
+      }
+
+      @media @desktop {
+        width: 20%;
+      }
+    }
+
+    h3 {
+      @media @desktop {
+        margin: auto 1.5rem;
+      }
+    }
+  }
+}
+
+.color {
+  background-color: @background;
+
+  @media @tablet {
+    flex-direction: column;
+  }
+
+  #reverse {
+    @media @tablet {
+      flex-direction: row;
+    }
+  }
+
+  .col-1-of-2 {
+    width: 40%;
+    .flex(center, center);
+    flex-direction: column;
+    padding: 3rem;
+
+    @media @desktop {
+      width: 80%;
+      margin: 2rem 4rem;
+    }
+
+    @media @tablet {
+      width: 100%;
+      flex-direction: row-reverse;
+    }
+
+    @media @phone {
+      width: 100%;
+      padding: 1rem;
+    }
+
+    h3 {
+      @media @tablet {
+        margin: 1.5rem;
+      }
+    }
+
+    img {
+      width: 60%;
+      border-radius: 50%;
+
+      &:hover {
+        transition: 0.5s ease-in-out;
+        transform: scale(.9, .9);
+      }
+
+      @media @tablet {
+        width: 20%;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
